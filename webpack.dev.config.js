@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// require("tailwindcss")
 const path = require("path");
 
 module.exports = {
@@ -8,12 +9,11 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, './example/index.tsx'),
   },
-  mode: "development",
   devServer: {
     hot: true,
     port: 8090,
     headers: { "Access-Control-Allow-Origin": "*" },
-    open: true,
+    open: false,
   },
   module: {
     rules: [
@@ -24,13 +24,13 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use:{
-            loader: 'html-loader'
+        use: {
+          loader: 'html-loader'
         }
-    },
+      },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ]
   },
@@ -55,5 +55,5 @@ module.exports = {
   stats: {
     children: true,
     errorDetails: true
-  }
+  },
 };

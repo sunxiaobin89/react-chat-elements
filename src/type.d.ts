@@ -1069,6 +1069,11 @@ export interface INavbarProps {
   right?: any
 }
 
+
+export interface IAssistantProps {
+  className?: string
+}
+
 /**
  * MessageType Type
  * @type ILocationMessageProps

@@ -1,3 +1,5 @@
+import './index.css';
+
 import MessageBox from './MessageBox/MessageBox'
 import ChatItem from './ChatItem/ChatItem'
 import ChatList from './ChatList/ChatList'
@@ -22,6 +24,7 @@ import Dropdown from './Dropdown/Dropdown'
 import SideBar from './SideBar/SideBar'
 import Popup from './Popup/Popup'
 import Circle from './Circle/Circle'
+import Assistant from './Assistant/Assistant'
 
 export {
   MessageBox,
@@ -48,4 +51,5 @@ export {
   SideBar,
   Popup,
   Circle,
+  Assistant,
 }

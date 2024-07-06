@@ -18,6 +18,7 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "@types/react-icons": "^3.0.0",
+    "autoprefixer": "^10.4.19",
     "babel-jest": "21.2.0",
     "babel-loader": "^8.2.5",
     "copyfiles": "^2.4.1",
@@ -28,6 +29,8 @@
     "jest": "21.2.1",
     "lorem-ipsum": "^1.0.4",
     "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.39",
+    "postcss-loader": "^8.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
@@ -38,6 +41,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
+    "tailwindcss": "^3.4.4",
     "ts-loader": "^9.3.0",
     "typescript": "^4.6.4",
     "webpack": "^5.73.0",
@@ -83,9 +87,12 @@
   },
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "antd": "^5.19.1"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "antd": "^5.19.1",
     "classnames": "^2.2.5",
     "progressbar.js": "^1.1.0",
     "react-icons": "^4.3.1",
