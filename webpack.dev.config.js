@@ -52,6 +52,10 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", "jsx"],
+    alias: {
+      // 设置 '@' 为 'src' 目录的别名
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({

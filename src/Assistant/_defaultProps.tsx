@@ -2,8 +2,8 @@ import { SmileFilled } from '@ant-design/icons'
 
 // const logo = require('../assets/img/logo.svg').default;
 import { Avatar } from 'antd'
-// import logo from '../assets/img/logo.svg'
-const logo = 'https://q3.itc.cn/q_70/images03/20240519/1b4e7565b46241b68288ae482412a866.jpeg';
+import logo from '@/assets/img/logo.svg'
+// const logo = 'https://q3.itc.cn/q_70/images03/20240519/1b4e7565b46241b68288ae482412a866.jpeg';
 
 export default {
   title: 'AI助手',
