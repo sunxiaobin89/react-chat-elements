@@ -13,6 +13,8 @@ yarn-debug.log*
 yarn-error.log*
 dist
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # -------- React Native -------- #
 
