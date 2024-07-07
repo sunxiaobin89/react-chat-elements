@@ -32,6 +32,17 @@ module.exports = {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 1024 * 10,  // 1024b * n = ? kb 限制内转base64
+            name: '[name].[ext]',
+            outputPath: 'images/'
+          }
+        }
+      },
     ]
   },
   optimization: {

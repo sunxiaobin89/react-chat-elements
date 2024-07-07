@@ -1,4 +1,14 @@
-.rce-container-clist {
-  display: block;
-  overflow: auto;
+.assistant-pro-layout {
+}
+
+.assistant-prefix-layout .assistant-prefix-sider-logo {
+  padding: 10px;
+}
+
+.assistant-prefix-layout .assistant-prefix-layout-container {
+  height: 100vh;
+}
+
+.assistant-prefix-sider-collapsed-button {
+  display: none;
 }
