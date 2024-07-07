@@ -22,7 +22,7 @@ const MessageList: FC<IMessageListProps> = ({
     var e = referance
     if (!e || !e.current) return
 
-    if (toBottomHeight === '100%' || (toBottomHeight && scrollBottom < toBottomHeight)) {
+    if (toBottomHeight === '100%' || (typeof toBottomHeight === 'number' && toBottomHeight && scrollBottom < toBottomHeight)) {
       e.current.scrollTop = e.current.scrollHeight // scroll to bottom
     } else {
       if (lockable === true) {
@@ -98,7 +98,7 @@ const MessageList: FC<IMessageListProps> = ({
   const onScroll = (e: React.UIEvent<HTMLElement>): void => {
     var bottom = getBottom(e.currentTarget)
     setScrollBottom(bottom)
-    if (toBottomHeight === '100%' || (toBottomHeight && bottom > toBottomHeight)) {
+    if (toBottomHeight === '100%' || (typeof toBottomHeight === 'number' && toBottomHeight && bottom > toBottomHeight)) {
       if (_downButton !== true) {
         setDownButton(true)
         setScrollBottom(bottom)

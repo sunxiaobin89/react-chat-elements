@@ -593,7 +593,7 @@ export interface IMessageListProps {
   dataSource: MessageType[]
   actionButtons?: MeetingLinkActionButtons[]
   lockable: boolean
-  toBottomHeight?: String | number
+  toBottomHeight?: string | number
   downButton?: boolean
   downButtonBadge?: number
   sendMessagePreview?: boolean

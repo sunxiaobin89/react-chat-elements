@@ -28,6 +28,7 @@ import {
 } from 'antd';
 import React, { useState } from 'react';
 import defaultProps from './_defaultProps';
+import classnames from 'classnames';
 
 const Item: React.FC<{ children: React.ReactNode }> = (props) => {
   const { token } = theme.useToken();
@@ -275,10 +276,7 @@ export default () => {
   return (
     <div
       id="test-pro-layout"
-      style={{
-        height: '100vh',
-        overflow: 'auto',
-      }}
+      className={classnames('w-full', 'h-screen')}
     >
       <ProConfigProvider hashed={false}>
         <ConfigProvider

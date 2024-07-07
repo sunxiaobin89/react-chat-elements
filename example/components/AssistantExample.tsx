@@ -3,7 +3,7 @@ import Assistant from '../../src/Assistant/Assistant'
 function ChatListExample() {
 
   return (
-    <Assistant></Assistant>
+    <Assistant />
   )
 }
 

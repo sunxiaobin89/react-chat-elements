@@ -9,7 +9,7 @@ import path from 'path'
 export default [
   {
     input: './build/index.js',
-    external: ['antd', '@ant-design/icons'], // 指定为外部依赖
+    external: ['antd', '@ant-design/icons', '@ant-design/pro-components', '@emotion/css'], // 指定为外部依赖
     output: [
       {
         file: 'dist/main.js',
